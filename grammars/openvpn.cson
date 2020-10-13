@@ -10,7 +10,7 @@ patterns: [
     name: "comment.line.character.openvpn"
   }
   {
-    match: "^\\s*(?i)(ca|cert|cipher|client(-config-dir|-to-client)?|compress|dev(-node)?|dh|duplicate-cn|explicit-exit-notify|group|http-proxy(-retry)?|ifconfig(-pool-persist|-push)?|inactive|keepalive|key|learn-address|log(-append)?|max-clients|mute(-replay-warnings)?|nobind|persist-(key|tun)|ping(-restart|-timer-rem)?|port|proto|push|remote(-cert-tls|-random)?|resolv-retry|route|secret|server|server(-bridge)?|status|tls-(auth|client|server)|up|user|verb)\\b"
+    match: "^\\s*(?i)(auth-nocache|ca|cert|cipher|client(-config-dir|-to-client)?|compress|dev(-node)?|dh|duplicate-cn|explicit-exit-notify|group|http-proxy(-retry)?|ifconfig(-pool-persist|-push)?|inactive|keepalive|key|learn-address|log(-append)?|max-clients|mute(-replay-warnings)?|nobind|persist-(key|tun)|ping(-restart|-timer-rem)?|port|proto|push|remote(-cert-tls|-random(-hostname)?)?|reneg-sec|resolv-retry|route|secret|server|server(-bridge)?|status|tls-(auth|client|server)|up|user|verb)\\b"
     name: "keyword.language.openvpn"
   }
   {
@@ -73,6 +73,14 @@ patterns: [
     endCaptures:
       "1":
         name: "punctuation.definition.tag.end.html"
+  }
+  {
+    begin: "^-----"
+    captures:
+      "0":
+        name: "punctuation.definition.comment.openvpn"
+    end: "-----$"
+    name: "comment.block.openvpn"
   }
 ]
 scopeName:  "source.openvpn"
