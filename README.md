@@ -35,7 +35,7 @@ $ git clone https://github.com/idleberg/atom-language-openvpn language-openvpn
 
 ## Related
 
-- [sublime-openvpn](https://packagecontrol.io/packages/openvpn)
+- [sublime-openvpn](https://packagecontrol.io/packages/OpenVPN)
 - [vscode-openvpn](https://marketplace.visualstudio.com/items?itemName=idleberg.openvpn)
 
 ## License
